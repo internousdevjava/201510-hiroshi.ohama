@@ -12,35 +12,37 @@ public class KisoKadai3 {
 	public static void main(String args[]) {
 
 		InputStreamReader isr = new InputStreamReader(System.in);
+		//InputStreamReaderã‚’ä½¿ã£ã¦ã”ã£ãã‚Šæƒ…å ±ã‚’å–ã£ã¦ãã‚‹ã€‚
 		BufferedReader br = new BufferedReader(isr);
-		String str="";
+		//BufferedReaderã‚’ä½¿ã£ã¦ã‚‚ã†å°‘ã—æƒ…å ±ã‚’çµã‚‹ã€‚
+		String str="";//æƒ…å ±ã‚’è¨˜éŒ²ãƒ»ä¿ç®¡ã™ã‚‹ãŸã‚ã®å ´æ‰€ã‚’ä½œã‚‹ã€‚
 		String a="";
 		int b=0;
 		try {
-			System.out.println("ƒtƒHƒ‹ƒ_‚ÌêŠ‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢");
-			System.out.println("“ü—Í—á@c:\\users\\internous\\abc");
-			a = br.readLine();
+			System.out.println("ãƒ•ã‚©ãƒ«ãƒ€ã®å ´æ‰€ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„");
+			System.out.println("å…¥åŠ›ä¾‹ã€€c:\\users\\internous\\abc");
+			a = br.readLine();//String a ã¨ã„ã†å ´æ‰€ã«æ›¸ã‹ã‚ŒãŸã‚‚ã®ã‚’èª­ã¿è¾¼ã‚“ã§ãã ã•ã„ã€‚
 		}catch (IOException ex) {
-			// —áŠOˆ—
+			//tryã®ã¨ãã¯catchã§ã‚¨ãƒ©ãƒ¼ã®ã¨ãã®å‡¦ç†ã‚’ä½œã‚‰ãªã„ã¨ã„ã‘ãªã„ã€‚
 			ex.printStackTrace();
 		}
 		
-		// FileƒIƒuƒWƒFƒNƒg‚ğ¶¬‚·‚é
-		File f = new File(a);
-		File d = new File(f.getParent()); 
+		
+		File f = new File(a);//ãƒ•ã‚¡ã‚¤ãƒ«ãŒã‚ã‚‹ã‹èª¿ã¹ã‚‹ã€‚
+		File d = new File(f.getParent()); //ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªãŒã‚ã‚‹ã‹èª¿ã¹ã‚‹ã€‚
 
 		if(d.mkdirs()){
-			System.out.println("ƒtƒHƒ‹ƒ_‚ª‚È‚¢‚½‚ßV‹Kì¬‚µ‚Ü‚µ‚½B");
+			System.out.println("ãƒ•ã‚©ãƒ«ãƒ€ãŒãªã„ãŸã‚æ–°è¦ä½œæˆã—ã¾ã—ãŸ");
 		} else {
-			System.out.println("ƒtƒHƒ‹ƒ_‚ªŒ©‚Â‚©‚è‚Ü‚µ‚½B");	
+			System.out.println("ãƒ•ã‚©ãƒ«ãƒ€ãŒè¦‹ã¤ã‹ã‚Šã¾ã—ãŸ");	
 		}
 
-		if(f.exists()){ //ƒtƒ@ƒCƒ‹‚ª‘¶İ‚µ‚Ä‚¢‚é‚©ƒ`ƒFƒbƒN 
-			System.out.println("’†‚Ìƒtƒ@ƒCƒ‹‚ğŠJ‚«‚Ü‚·"); 		
+		if(f.exists()){ 
+			System.out.println("ä¸­ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é–‹ãã¾ã—ãŸ"); 		
 		}else{ 
 			try{ 
-				f.createNewFile(); 
-				System.out.println("V‚µ‚­ƒtƒ@ƒCƒ‹‚ğì¬‚µ‚Ü‚·"); 
+				f.createNewFile(); //ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½œã‚‹ãŸã‚ã®é–¢æ•°
+				System.out.println("æ–°ã—ããƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½œæˆã—ã¾ã™"); 
 			}catch(Exception e){ 
 				System.out.println("Error"); 
 				} 
@@ -48,8 +50,8 @@ public class KisoKadai3 {
 		
 		while(b!=4){
 			try{
-				System.out.println("1‚È‚ç’Ç‹L‘‚«‚İA2‚È‚çã‘‚«‘‚«‚İA3‚È‚ç“Ç‚İ‚İA4‚È‚çI—¹");
-				String h = br.readLine();
+				System.out.println("ï¼‘ãªã‚‰è¿½è¨˜ã€ï¼’ãªã‚‰ä¸Šæ›¸ãã€ï¼“ãªã‚‰èª­ã¿è¾¼ã¿ã€ï¼”ãªã‚‰çµ‚äº†");
+				String h = br.readLine();// ï½ˆã‚’èª­ã¿è¾¼ã¿ãŸã„ã‘ã©ã€stringã¯èª­ã¿è¾¼ã‚ãªã„ã‹ã‚‰ã‹ã‚‰intå‹ã«ã—ã¦ã‚‹ã€‚
 				b = Integer.parseInt(h);
 			}catch(Exception e){
 				
@@ -58,17 +60,17 @@ public class KisoKadai3 {
 			if(b==1){
 				
 				
-				// o—Íæ‚ğì¬‚·‚é
+				
 				try{
 					FileWriter fw = new FileWriter(f,true);
-					str = br.readLine();
-					fw.write(str+"\r\n");
-					fw.close();
+					str = br.readLine();//strã®ä¸­ã«è¨˜éŒ²ã•ã‚Œã¦ã„ã‚‹æƒ…å ±ã‚’èª­ã¿è¾¼ã‚“ã§ãã ã•ã„ã€‚
+					fw.write(str+"\r\n");//æ–‡å­—ã‚’å…¥åŠ›ã§ãã‚‹ã‚ˆã†ã«ã—ãŸã€‚
+					fw.close();//ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä¿å­˜ã—ã¦çµ‚äº†
 				}catch(Exception e){
 					
 				}
-				// I—¹ƒƒbƒZ[ƒW‚ğ‰æ–Ê‚Éo—Í‚·‚é
-				System.out.println("o—Í‚ªŠ®—¹‚µ‚Ü‚µ‚½B");
+				
+				System.out.println("å‡ºåŠ›ãŒå®Œäº†ã—ã¾ã—ãŸ");
 			}else if(b==2){try{
 				FileWriter fw = new FileWriter(f,false);
 				str = br.readLine();
@@ -76,23 +78,23 @@ public class KisoKadai3 {
 				fw.close();
 			  }catch(Exception e){
 				}
-			System.out.println("o—Í‚ªŠ®—¹‚µ‚Ü‚µ‚½B");	
+			System.out.println("å‡ºåŠ›ãŒå®Œäº†ã—ã¾ã—ãŸ");	
 			}else if(b==3){	
 				try{
-		            FileReader p = new FileReader(a);
+		            FileReader p = new FileReader(a);//èª­ã¿è¾¼ã‚€ãŸã‚ã«FileReaderã¨ã„ã†ã‚‚ã®ã‚’ä½¿ã‚ãªã„ã¨ã„ã‘ãªã„ã‚‰ã—ã„ã€‚
 		            BufferedReader q = new BufferedReader(p);
 		            String s;
 		            while((s = q.readLine())!=null){
 		                System.out.println(s);
 		            }
 		        }catch(Exception e){
-		            System.out.println("ƒtƒ@ƒCƒ‹“Ç‚İ‚İ¸”s");
+		            System.out.println("ãƒ•ã‚¡ã‚¤ãƒ«èª­ã¿è¾¼ã¿å¤±æ•—");
 		        }
 
 				
 			       }
 			   else if(b==4){
-			 System.out.println("I—¹‚µ‚Ü‚·");
+			 System.out.println("çµ‚äº†ã—ã¾ã™");
 				break;
 			}else{
 				

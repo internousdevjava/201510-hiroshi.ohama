@@ -8,22 +8,22 @@ public static void main(String args[]) throws IOException {
 
     InputStreamReader isr = new InputStreamReader(System.in);
     BufferedReader br = new BufferedReader(isr);
-    System.out.println("êîìñÇƒÉQÅ[ÉÄ");
-    System.out.println("ÇPÅ`ÇPÇOÇOÇÃêîéöÇì¸óÕÇµÇƒÇ≠ÇæÇ≥Ç¢");
+    System.out.println("Êï∞ÂΩì„Å¶„Ç≤„Éº„É†");
+    System.out.println("ÔºëÔΩûÔºëÔºêÔºê„ÅÆÊï∞Â≠ó„ÇíÂÖ•Âäõ„Åó„Å¶„Åè„Å†„Åï„ÅÑ");
    while(a!=answer){
     try{
         String str = br.readLine();
         a= Integer.parseInt(str);
         if(a>answer){
-        	System.out.println("Ç‡Ç¡Ç∆â∫ÇæÇÊ");
+        	System.out.println("„ÇÇ„Å£„Å®‰∏ã„Å†„Çà");
         }else if(a<answer){
-        	System.out.println("Ç‡Ç¡Ç∆è„ÇæÇÊ");     
+        	System.out.println("„ÇÇ„Å£„Å®‰∏ä„Å†„Çà");     
         }else if(a==answer){
-        	System.out.println("ê≥âÇæÇÊ");
+        	System.out.println("Ê≠£Ëß£„Å†„Çà");
         }
     }
     catch(NumberFormatException e){
-    	System.err.println("ÉGÉâÅ[ êîéöÇì¸óÕÇµÇƒÇÀ");
+    	System.err.println("„Ç®„É©„Éº„ÄÄÊï∞Â≠ó„ÇíÂÖ•Âäõ„Åó„Å¶„Å≠");
     }
    }
      }     

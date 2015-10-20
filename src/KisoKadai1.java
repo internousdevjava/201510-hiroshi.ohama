@@ -3,12 +3,12 @@ import java.io.InputStreamReader;
 public class KisoKadai1 {
 
 	public static void main(String args[]) {
-		System.out.println("•S•S‚Ì•\");
+		System.out.println("ç™¾ç™¾ã®è¡¨");
 		InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
 		
 		int x;
-		System.out.print("x”š‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢: ");
+		System.out.print("ï½˜æ•°å­—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„");
         try{
                 String buf = br.readLine();
                 x = Integer.parseInt(buf);
@@ -17,7 +17,7 @@ public class KisoKadai1 {
         }
         
         int y;
-		System.out.print("y”š‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢: ");
+		System.out.print("ï½™æ•°å­—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„");
         try{
                 String buf = br.readLine();
                 y = Integer.parseInt(buf);
